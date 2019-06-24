@@ -87,7 +87,6 @@ class TestBrowserStackSearch(unittest.TestCase):
         elem = self.driver.find_element_by_name("q")
         elem.send_keys("BrowserStack")
         elem.submit()
-        self.driver.find_element_by_name("btnG").click()
         self.assertTrue("browserstack" in self.driver.title.lower())
 
     def test_google_search_clone(self):
@@ -97,7 +96,6 @@ class TestBrowserStackSearch(unittest.TestCase):
         elem = self.driver.find_element_by_name("q")
         elem.send_keys("BrowserStack")
         elem.submit()
-        self.driver.find_element_by_name("btnG").click()
         self.assertTrue("browserstack" in self.driver.title.lower())
 
 if __name__ == '__main__':
